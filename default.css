@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   width: 100%;
   height: 100%;
+  overflow-y: hidden;
 }
 
 canvas:focus {
@@ -10,7 +11,19 @@ canvas:focus {
 
 .sketch-canvas {
   height: 256px;
+  width: 730px;
   overflow: hidden;
+}
+
+#sketch {
+  display: block;
+}
+
+#ui {
+  display: inline-block;
+  margin: 4px;
+  width: 200px;
+  vertical-align: top;
 }
 
 .pull-left {

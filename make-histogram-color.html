@@ -13,15 +13,15 @@
   <body>
     <noscript>JavaScriptを有効にしてください</noscript>
     <div class="sketch-canvas">
-      <div class="pull-left">
+      <div style="display:inline-block; width:512px">
         <canvas id="sketch" width="512" height="256"
                 data-processing-sources="MakeHistogramColor.pde"></canvas>
       </div>
-      <div class="pull-left" style="margin:8px">
+      <div id="ui">
         <button onclick="makeSlow()">&laquo;</button>
         <button onclick="makeFast()">&raquo;</button>
         <button onclick="restart()">restart</button><br>
-        Sample: #<input id="step" type="text" disabled>
+        Sample: #<input id="step" type="text" size="10" disabled>
       </div>
     </div>
     <script type="application/javascript">
